@@ -7,10 +7,11 @@ use Livewire\Component;
 class Counter extends Component
 {
     public int $count =10;
+    public int $number;
 
-    public function increment()
+    public function chnageCount(int $param)
     {
-        $this->count++;
+        $this->count = $param;
     }
 
 

@@ -3,5 +3,6 @@
     
     
     <h1>Count :  {{ $count }}</h1>
-    <button wire:click="increment">Increment</button>
+    <input type="number" wire:model.blur="number">
+    <button wire:click="chnageCount({{ $number }})">CHange COunt</button>
 </div>
